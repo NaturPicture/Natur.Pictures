@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Noto+Sans:wght@100&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+    <style>
+        
+
+        /* Navbar-Stile */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background-color: #526D82;
+            color: #526D82 ;
+        }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+            margin-right: 20px;
+            color: rgb(255, 255, 255);
+        }
+
+        body{
+
+            background-color: #27374D;
+        }
+        .navbar-links {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .navbar-links li {
+            margin-left: 10px;
+        }
+
+        .navbar-links a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            transition: opacity 0.3s;
+        }
+
+        .navbar-links a:hover {
+            opacity: 0.7;
+        }
+
+        /* Medienabfragen für Handys */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .navbar-links li {
+                margin: 10px 0;
+            }
+        }
+
+        .container {
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+            margin-top: 50px;
+        }
+
+        .pic {
+            width: 100%;
+            max-width: 400px;
+            margin: 10px;
+            box-shadow: 0px 0px 10px rgb(7, 7, 7);
+            border-radius: 10px;
+        }
+
+        .pic-caption {
+            color: #ffffff;
+            margin-top: 10px;
+        }
+
+        .pic-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+            color:#000000;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ffffff;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a class="navbar-brand" href="#">Name</a>
+        <ul class="navbar-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Über uns</a></li>
+            <li><a href="#">Galerie</a></li>
+            <li><a href="#">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <!-- Restlicher Inhalt der Webseite -->
+
+    <div class="pic-row">
+        <div class="container">
+            <img class="pic" src="IMG_8259-3.jpg">
+            <p class="pic-caption">600,00mm   ƒ/6,3   ISO 1600 1/1600 s </p>
+        </div>
+        <div class="container">
+            <img class="pic" src="vogel 18.03 ph.jpg">
+            <p class="pic-caption">600,00mm  ƒ/6,3  ISO 1000 1/2000 s  </p>
+        </div>
+    </div>
+
+    <div class="pic-row">
+        <div class="container">
+            <img class="pic" src="hintergrund.jpg">
+            <p class="pic-caption">516,00mm ƒ/6,3 ISO 1600 1/500 s </p>
+        </div>
+        <div class="container">
+            <img class="pic" src="20230525193253_IMG_2995.jpg">
+            <p class="pic-caption">600,00mm ƒ/6,3 ISO 1600 1/1250 s</p>
+        </div>
+    </div>
+
+    <h1 class="Hello3">Hello3</h1>
+    <h1 class="Hello2">Hello2</h1>
+</body>
+</html>
